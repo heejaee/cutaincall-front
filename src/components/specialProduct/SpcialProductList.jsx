@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getActiveSpecialProducts } from '../../api/specialProductApi';
 import "./SpecialProductList.css";
-import "/src/components/products/productList.css";
+import "/src/components/products/ProductList.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
