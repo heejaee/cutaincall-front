@@ -58,7 +58,7 @@ const SpecialProductList = () => {
                                 />
                                 <h3
                                     className="product-title"
-                                    title={specialProductDto.productName}  // Show full name on hover
+                                    title={specialProductDto.productName}
                                 >
                                     {specialProductDto.productName}
                                 </h3>

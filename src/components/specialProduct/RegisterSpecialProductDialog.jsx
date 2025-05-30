@@ -36,7 +36,7 @@ const RegisterSpecialProductDialog = ({ open, onClose, onRegister }) => {
         setAlertState({ ...alertState, open: false });
     };
 
-    // 🔍 상품 검색 API 호출
+    // 상품 검색 API 호출
     const handleSearch = async () => {
         if (!searchKeyword.trim()) return;
 
@@ -57,7 +57,7 @@ const RegisterSpecialProductDialog = ({ open, onClose, onRegister }) => {
     };
 
 
-    // 🟢 상품 선택 시 정보 설정
+    // 상품 선택 시 정보 설정
     const handleProductSelect = (product) => {
         setSelectedProduct(product);
     };
@@ -100,7 +100,7 @@ const RegisterSpecialProductDialog = ({ open, onClose, onRegister }) => {
             <Dialog open={open} onClose={onClose} fullWidth>
                 <DialogTitle>특가상품 등록</DialogTitle>
                 <DialogContent>
-                    {/* 🔍 검색 필드 */}
+                    {/* 검색 필드 */}
                     <Box sx={{ display: "flex", gap: 2, mb: 2, mt: 2 }}> {/* `mt: 2` 추가 */}
                         <TextField
                             label="상품 검색"

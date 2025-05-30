@@ -15,30 +15,30 @@ const EditSpecialProductDialog = ({ open, onClose, product, setProduct, onUpdate
             <DialogTitle>특가상품 수정</DialogTitle>
             <DialogContent>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 2, mt: 1 }}>
-                    {/* ✅ 첫 번째 줄: 상품 이름 + 가격 */}
+                    {/* 첫 번째 줄: 상품 이름 + 가격 */}
                     <Box sx={{ display: "flex", gap: 2 }}>
                         <TextField
                             label="상품 이름"
                             value={product.productName}
-                            disabled // ✅ 읽기 전용
+                            disabled // 읽기 전용
                             fullWidth
                         />
                         <TextField
                             type="number"
                             label="가격"
                             value={product.price}
-                            disabled // ✅ 읽기 전용
+                            disabled // 읽기 전용
                             fullWidth
                         />
                     </Box>
 
-                    {/* ✅ 두 번째 줄: 공연 시작 날짜 + 공연 종료 날짜 */}
+                    {/* 두 번째 줄: 공연 시작 날짜 + 공연 종료 날짜 */}
                     <Box sx={{ display: "flex", gap: 2 }}>
                         <TextField
                             type="date"
                             label="공연 시작일"
                             value={product.startDate}
-                            disabled // ✅ 읽기 전용
+                            disabled // 읽기 전용
                             InputLabelProps={{ shrink: true }}
                             fullWidth
                         />
@@ -46,13 +46,13 @@ const EditSpecialProductDialog = ({ open, onClose, product, setProduct, onUpdate
                             type="date"
                             label="공연 종료일"
                             value={product.endDate}
-                            disabled // ✅ 읽기 전용
+                            disabled // 읽기 전용
                             InputLabelProps={{ shrink: true }}
                             fullWidth
                         />
                     </Box>
 
-                    {/* ✅ 세 번째 줄: 할인 시작일 + 할인 종료일 + 할인율 */}
+                    {/* 세 번째 줄: 할인 시작일 + 할인 종료일 + 할인율 */}
                     <Box sx={{ display: "flex", gap: 2 }}>
                         <TextField
                             type="date"

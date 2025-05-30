@@ -39,13 +39,7 @@ export default function Footer() {
                             <br/>
                             대표이사: 함기용, 심은미, 손홍인, 박희재, 김유성
                             <br/>
-                            사업자등록번호 581-88-00303
-                            <br/>
-                            통신판매업 신고번호: 제2022-서울강남-04515호
-                            <br/>
-                            <Link href="https://elice.training/" underline="hover">
-                                사업자정보 확인
-                            </Link>
+                            사업자등록번호 585-18-34303
                         </Typography>
                     </Box>
 
@@ -59,12 +53,11 @@ export default function Footer() {
                             | 언제든지 눌러주세요
                             <br/>
                             <Typography component="span" sx={{fontWeight: "bold", fontSize: "18px"}}>
-                                1833-6068
+                                1843-6134
                             </Typography>
                             <br/>
                             서울특별시 강남구 선릉로 433
                             <br/>
-                            email: <Link href="mailto:kdt@elice.io">kdt@elice.io</Link>
                         </Typography>
                     </Box>
 
@@ -73,11 +66,11 @@ export default function Footer() {
                         <Typography variant="body2" color="text.secondary">
                             <strong>홈페이지 이용 안내</strong>
                             <br/>
-                            본 홈페이지는 엘리스 클라우드 백엔드 트랙 5기
+                            본 홈페이지는 뮤지컬, 연극, 콘서트를
                             <br/>
-                            3차 팀 프로젝트 중 6팀의 결과물입니다.
+                            예매할 수 있는 프로그램입니다.
                             <br/>
-                            <Link href="https://kdt-gitlab.elice.io/cloud_track/class_05/web_project3/team06"
+                            <Link href="https://github.com/heejaee/curtaincall-back"
                                   underline="hover">
                                 프로젝트 정보 확인
                             </Link>
