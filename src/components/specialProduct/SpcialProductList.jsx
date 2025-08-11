@@ -5,12 +5,14 @@ import "./SpecialProductList.css";
 import "/src/components/products/ProductList.css";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import CountdownTimer from './CountdownTimer';
 
 
 const SpecialProductList = () => {
     const [specialProducts, setSpecialProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(0);
     const itemsPerPage = 5;
+
 
     useEffect(() => {
         const fetchSpecialProducts = async () => {
@@ -56,6 +58,16 @@ const SpecialProductList = () => {
                                     alt={specialProductDto.productName}
                                     className="product-image"
                                 />
+                                {/* 타임딜 타이머 영역 */}
+                                <div style={{ marginTop: '8px' }}>
+                                    {specialProductDto.expiring && (
+                                        <>
+                                            <span className="badge-time">타임딜</span>{' '}
+                                            <CountdownTimer targetDate={specialProductDto.discountEndDate} />
+                                        </>
+                                    )}
+                                </div>
+
                                 <h3
                                     className="product-title"
                                     title={specialProductDto.productName}

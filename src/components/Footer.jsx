@@ -56,7 +56,7 @@ export default function Footer() {
                                 1843-6134
                             </Typography>
                             <br/>
-                            서울특별시 강남구 선릉로 433
+                            서울특별시 송파구 백제고분로
                             <br/>
                         </Typography>
                     </Box>
